@@ -1,0 +1,185 @@
+<nav class="navbar">
+    <div class="brandLogo">
+        <h3 class="BrandHeading">My Fitness Club</h3>
+    </div>
+    <div [class]="navLinksClassList">
+        <ul>
+            <a class="links" href="#home"><li class="link-label">Home</li></a>
+            <a class="links" href="#programs"><li class="link-label">Programs</li></a>
+            <a class="links" href="#membership"><li class="link-label">Memberships</li></a>
+            <a class="links" href="#trainers"><li class="link-label">Trainers</li></a>
+            <a class="links" href="#contact-us"><li class="link-label">Contact Us</li></a>
+            <a href="#"><li class="login">Login</li></a>
+            <a href="#"><li class="signup">Signup</li></a>
+        </ul>
+    </div>
+    <div [class]="hamburgerClassList" (click)="toggleNav()">
+        <div class="burger-lines"></div>
+        <div class="burger-lines"></div>
+        <div class="burger-lines"></div>
+    </div>
+</nav>
+<header id="home">
+    <div class="brandHero">
+        <h1 class="heroHeading"><span>Tone Your</span><br>Ideal Body</h1>
+        <h3 class="heroCaption">Don't sweat, do Sparkle</h3>
+        <p class="heroDescription">Here we will help you to shape and build your ideal body and live up your life to the fulest.</p>
+    </div>
+</header>
+<main class="main-container"> 
+    <section id="programs">
+        <h1 class="section-heading">Training Offers</h1>
+        <p class="section-description">We provides variety of trainings for best selection of your need.</p>
+        <div class="section-content">
+            <div class="card">
+                <div class="image-div">
+                    <img src="./../assets/images/bodybuilding-program.jpg" class="card-img" alt="">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-heading">Body Building</h2>
+                    <p class="card-description">Regular strength training improves the health of your bones, muscles, and connective thesue.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-div">
+                    <img src="./../assets/images/program-yoga.jpg" class="card-img" alt="">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-heading">Yoga</h2>
+                    <p class="card-description">Enjoy yoga classes for all levels, body elastic, body weight workouts, barre, pilates, and more.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-div">
+                    <img src="./../assets/images/fitness-program.jpg" class="card-img" alt="">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-heading">Body Building</h2>
+                    <p class="card-description">Your trainer will prepare and show you a workout regime designed to meet your fitness level and goals.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-div">
+                    <img src="./../assets/images/aerobics-program.jpg" class="card-img" alt="">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-heading">Aerobics</h2>
+                    <p class="card-description">Your training will be on the basis of flexibility and high stamina. Here the will help you to become flecxible, fit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="membership">
+        <h1 class="section-heading">Membership Plans</h1>
+        <p class="section-description">Here are some most exciting gym membership plans</p>
+        <div class="section-content">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-heading">Daily Plan</h2>
+                    <p class="card-description"><span>&#8377;</span>80</p>
+                    <ul>
+                        <li class="plan-list">- 2 hours personal training</li>
+                        <li class="plan-list">- Free consulting</li>
+                    </ul>
+                </div>
+                <button class="join-now button">Join Now <span>&#8594;</span></button>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-heading">Weekly Plan</h2>
+                    <p class="card-description"><span>&#8377;</span>300</p>
+                    <ul>
+                        <li class="plan-list">- 3 hours personal training</li>
+                        <li class="plan-list">- Free consulting</li>
+                    </ul>
+                </div>
+                <button class="join-now button">Join Now <span>&#8594;</span></button>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-heading">Monthly Plan</h2>
+                    <p class="card-description"><span>&#8377;</span>850</p>
+                    <ul>
+                        <li class="plan-list">- 5 hours personal training</li>
+                        <li class="plan-list">- Free consulting</li>
+                        <li class="plan-list">- Excrcise program</li>
+                    </ul>
+                </div>
+                <button class="join-now button">Join Now <span>&#8594;</span></button>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-heading">Daily Plan</h2>
+                    <p class="card-description"><span>&#8377;</span>3500</p>
+                    <ul>
+                        <li class="plan-list">- 5 hours personal training</li>
+                        <li class="plan-list">- Free consulting</li>
+                        <li class="plan-list">- Exercise Program</li>
+                        <li class="plan-list">- Nutrition Plan</li>
+                    </ul>
+                </div>
+                <button class="join-now button">Join Now <span>&#8594;</span></button>
+            </div>
+        </div>
+    </section>
+    <section id="trainers">
+        <h1 class="section-heading">Our Trainers</h1>
+        <p class="section-description">We provies best and experienced trainees for your training</p>
+        <div class="section-content">
+            <div class="card">
+                <div class="image-div">
+                    <img src="./../assets/images/trainer1.jpg" class="card-img" alt="">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-heading">Vivek Kapoor</h2>
+                    <p class="card-description">Fitness Program trainer</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-div">
+                    <img src="./../assets/images/trainer3.jpg" class="card-img" alt="">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-heading">Yashika Fernandez</h2>
+                    <p class="card-description">Aerobics Program trainer</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-div">
+                    <img src="./../assets/images/trainer2.jpg" class="card-img" alt="">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-heading">Pradeep Yadav</h2>
+                    <p class="card-description">Body Building Trainer</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-div">
+                    <img src="./../assets/images/trainer4.jpg" class="card-img" alt="">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-heading">Angel Smith</h2>
+                    <p class="card-description">Yoga Trainer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-us">
+        <h1 class="section-heading">Contact Us</h1>
+        <p class="section-description">You can <strong>call</strong> or contact us on <br><strong>[+91 9425641222 ]</strong></p>
+        <div class="section-content">
+            <form #form="ngForm" (ngSubmit)="onSubmit()">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Name" [(ngModel)]="UserName">
+                <label for="contact">Contact</label>
+                <input type="text" name="number" id="contact" placeholder="Phone number" [(ngModel)]="UserNumber">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Enter Email here" [(ngModel)]="UserEmail">
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>All Copyrights are reserved</p>
+</footer>
